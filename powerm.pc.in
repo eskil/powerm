@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: powerm
+Description: Small APM/ACPI Library
+Version: @VERSION@
+Libs: -L${libdir} -lpowerm
+Cflags: -I${includedir}
+
+

@@ -1,0 +1,20 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(powerm, 0.1)
+AM_CONFIG_HEADER(config.h)
+
+dnl Pick up the Gnome macros.
+dnl AM_ACLOCAL_INCLUDE(macros)
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AM_PROG_LIBTOOL
+AC_HEADER_STDC
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+powerm.pc
+])
+
